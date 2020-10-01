@@ -1,7 +1,7 @@
 all: defective
 
 defective: defective.o
-	gcc -o $@ $^
+	g++ -o $@ $^
 
-%.o: %.c
-	gcc -c -o $@ $<
+%.o: %.cpp
+	g++ -c -o $@ $<
